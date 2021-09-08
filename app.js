@@ -14,7 +14,11 @@ app.listen(port, () => {
     console.log("listen port 8000");
 });
 
-//create api
+app.get("/", (req, res) => {
+    // res.send(JSON.stringify(response));
+    res.sendFile(path.join(__dirname, '/index.html'));
+});
+
 app.get("/entrar", (req, res) => {
     console.log(count);
     if (count <= max) {
