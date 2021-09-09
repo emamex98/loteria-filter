@@ -9,9 +9,9 @@ let sessionID = ""
 
 // Express Initialize
 const app = express();
-const port = 443;
+const port = 8000;
 app.listen(port, () => {
-    console.log("listen port 443");
+    console.log("listen port 8000");
 });
 
 app.get("/", (req, res) => {
